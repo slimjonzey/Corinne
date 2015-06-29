@@ -1,0 +1,25 @@
+﻿@model List<CorinneCity.Models.GovOfficial>
+@{
+    ViewBag.Title = "Planning & Zoning Commission Members";
+}
+
+<div class="wrapper col3">
+    <div id="container">
+        <hgroup class="title">
+            <h1>@ViewBag.Title</h1>
+        </hgroup>
+        @foreach (var person in Model)
+        {
+            if (person.Department == "Planning")
+            {
+                <div class="personheading">@person.Title @person.Name</div>
+                <br />
+                <div class="spiel">@person.Spiel</div>
+                <div>Contact @person.Name at @person.Phone</div>
+                <br />
+            }
+        }
+    </div>
+</div>
+
+

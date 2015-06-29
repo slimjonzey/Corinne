@@ -1,0 +1,11 @@
+﻿@model List<CorinneCity.Models.Minute>
+<ul id="item">
+    @foreach (var item in Model)
+    {
+       <li>
+           <a onclick="appendMinutes('@item.FileContent')">@item.FileName</a>
+           <br />
+           <br />
+       </li> 
+    }
+</ul>

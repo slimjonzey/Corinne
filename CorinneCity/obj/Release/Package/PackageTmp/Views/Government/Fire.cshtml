@@ -1,0 +1,29 @@
+﻿@model List<CorinneCity.Models.GovOfficial>
+@{
+    ViewBag.Title = "Fire Department";
+}
+
+<div class="wrapper col3">
+    <div id="container">
+        <h1>@ViewBag.Title</h1>
+
+        <ul style="list-style: none; margin: 0; padding: 0">
+            <li>2355 North 3950 West</li>
+            <li>Emergency 911</li>
+            <li>Phone: 435-744-2247</li>
+            <li>Fax: 435-744-5105</li>
+            <br />
+        </ul>
+
+        @foreach (var person in Model)
+        {
+            if (person.Department == "Fire")
+            {
+                <div class="personheading">@person.Title @person.Name</div>
+                <br />
+            }
+        }
+    </div>
+</div>
+
+

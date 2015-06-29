@@ -1,0 +1,20 @@
+﻿@model List<CorinneCity.Models.GovOfficial>
+@{
+    ViewBag.Title = "City Employees";
+}
+
+<div class="wrapper col3">
+    <div id="container">
+        <h1>@ViewBag.Title</h1>
+        @foreach (var person in Model)
+        {
+            if (person.Department == "Employees")
+            {
+                <div class="personheading">@person.Title @person.Name</div>
+                <br />
+            }
+        }
+    </div>
+</div>
+
+        

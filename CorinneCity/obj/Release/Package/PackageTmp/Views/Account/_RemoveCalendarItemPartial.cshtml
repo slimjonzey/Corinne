@@ -1,0 +1,15 @@
+﻿@model CorinneCity.Models.LocalPasswordModel
+@{
+    ViewBag.Title = "Remove Calendar Event";
+}
+
+@using (Html.BeginForm("Manage", "Account"))
+{
+    @Html.AntiForgeryToken()
+    <h3>@ViewBag.Title</h3>
+    <fieldset class="dashboardItem">
+        <legend>Remove Calendar Item Form</legend>
+        <input type="hidden" name="removecalendar" value="removecalendar" />
+        <input type="submit" value="Delete Calendar Events" />
+    </fieldset>
+}

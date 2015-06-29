@@ -1,0 +1,16 @@
+﻿@model CorinneCity.Models.LocalPasswordModel
+
+@{
+    ViewBag.Title = "Upload Planning & Zoning Minutes";
+}
+
+@using (Html.BeginForm("Manage", "Account"))
+{
+    @Html.AntiForgeryToken()
+    <h3>@ViewBag.Title</h3>
+    <fieldset class="dashboardItem">
+        <legend>Upload City Council Minutes Form</legend>
+        <input type="hidden" name="planminutes" value="planminutes" />
+        <input type="submit" value="Upload Planning & Zoning Minutes" />
+    </fieldset>
+}

@@ -1,0 +1,32 @@
+﻿@model List<CorinneCity.Models.GovOfficialFormatted>
+@{
+    ViewBag.Title = "Mayor & Council Members";
+}
+
+<script src="@Url.Content("~/Scripts/jquery-1.8.3.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/jquery-ui-1.8.20.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/Council.js")" type="text/javascript"></script>
+
+<div class="wrapper col3">
+    <div id="container">
+        <h1>@ViewBag.Title</h1>
+        @foreach (var person in Model)
+        {
+            if (person.Department == "Council")
+            {
+                <div class="personheading">@person.Title @person.Name</div>
+                <ul>
+                    @foreach (string item in @person.Duties)
+                    {
+                        <li>@item</li>
+                    }
+                </ul>
+                <div>Contact @person.Name at <a href="mailto:@person.Email">@person.Email</a> or @person.Phone</div>
+                <br />
+            }
+        }
+    </div>
+</div>
+
+        
+

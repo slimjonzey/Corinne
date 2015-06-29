@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>@ViewBag.Title</title>
+        <link href="@Url.Content("~/Content/month_white.css?ver=1.0")" rel="stylesheet" type="text/css" />
+        <link href="@Url.Content("~/Content/calendar_white.css?ver=1.0")" rel="stylesheet" type="text/css" />
+        <link href="@Url.Content("~/Content/layout.css?ver=1.0")" rel="stylesheet" type="text/css" />
+        <link href="@Url.Content("~/Content/themes/base/jquery-treeview.css")" rel="stylesheet" type="text/css" />
+        <script src="@Url.Content("~/Scripts/daypilot-all.min.js?ver=1.0")" type="text/javascript"></script>
+        <script src="@Url.Content("~/Scripts/jquery-1.8.3.min.js?ver=1.0")" type="text/javascript"></script>
+        <script src="@Url.Content("~/Scripts/jquery-treeview-1.0.1.js?ver=1.0")" type="text/javascript"></script>
+        <meta name="viewport" content="width=device-width" />
+        @Styles.Render("~/Content/css")
+        @Scripts.Render("~/bundles/modernizr")
+        @Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/jqueryui")
+        @Styles.Render("~/Content/themes/base/css")
+        @RenderSection("scripts", required: false)
+        @RenderSection("css", false)
+		<link rel="shortcut icon" href="http://www.corinnecity.com/Images/logo.jpg" />
+    </head>
+    <body>
+        <header class="noprint">
+            <div>
+                <div>
+                    <section id="login">
+                        @Html.Partial("_LoginPartial") 
+                    </section>
+                    <nav>
+                        <ul id="topnav">
+                            <li class="last">@Html.ActionLink("About", "CityInfo", "Home")
+								<ul>
+									<li><a href="http://www.boxeldercounty.org/corinne-history.htm">City History</a></li>
+									<li><a href="/Images/City Map 2013.pdf">City Map</a></li>
+									<li><a href="/Images/zonemap.pdf">Zoning Map</a></li>
+								</ul>
+							</li>
+                            <li>
+                                @Html.ActionLink("Activities", "Activities", "Home")
+                                <ul>
+                                    <li>@Html.ActionLink("Register for Corinne 5K", "Register", "IndActivities")</li>
+                                </ul>
+                            </li>
+                            <li>
+                                @Html.ActionLink("City Forms", "", "Home")
+                                <ul>
+                                    <li>@Html.ActionLink("Additional Dog Permit", "AddDog", "Services")</li>
+                                    <li>@Html.ActionLink("Building Permit", "Building", "Services")</li>
+                                    <li>@Html.ActionLink("Business License", "Business", "Services")</li>
+                                    <li>@Html.ActionLink("Conditional Use Permit Application", "ConditionalUse", "Services")</li>
+                                    <li>@Html.ActionLink("City Park Reservation Form", "Reservations", "Services")</li>
+                                    <li>@Html.ActionLink("Dog License Renewal", "DogRenew", "Services")</li>
+                                    <li>@Html.ActionLink("Excavation Permit Request", "ExcavationPermit", "Services")</li>
+                                    <li>@Html.ActionLink("Veterans Hall Checklist", "VetCheck", "Services")</li>
+                                </ul>
+                            </li>
+                            <li>@Html.ActionLink("Calendar", "Calendar", "Home")</li>
+                            <li>
+                                @Html.ActionLink("Government", "", "Home")
+                                <ul>
+                                    <li>
+                                        @Html.ActionLink("City Council", "Council", "Government")
+                                        <ul>
+                                            <li>@Html.ActionLink("Mayor & Council Members", "Council", "Government")</li>
+                                            <li>@Html.ActionLink("Prior Meeting Minutes", "CouncilMinutes", "Government")</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        @Html.ActionLink("Planning & Zoning", "PlanZone", "Government")
+                                        <ul>
+                                            <li>@Html.ActionLink("Board Members", "PlanZone", "Government")</li>
+                                            <li>@Html.ActionLink("Prior Meeting Minutes", "PlanMinutes", "Government")</li>
+                                        </ul>
+                                    </li>
+                                    <li>@Html.ActionLink("Fire Department", "Fire", "Government")</li>
+                                    <li>@Html.ActionLink("City Employees", "Employees", "Government")</li>
+                                    <li>@Html.ActionLink("Board of Adjustments", "Adjustments", "Government")</li>
+                                    <li>@Html.ActionLink("Cemetery Board", "Cemetery", "Government")</li>
+                                    <li>@Html.ActionLink("City Codes", "CityCodes", "Government")</li>
+                                </ul>
+                            </li>
+                            <li class="active">@Html.ActionLink("Home", "Index", "Home")</li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <a class="noprint" style="float:right;" href="https://www.facebook.com/pages/Corinne-City/199385813507016"><img src="~/Images/facebook.png" /></a>
+        <div class="wrapper col1">
+            @RenderSection("featured", required: false)
+            <section>
+                @RenderBody()
+            </section>
+        </div>
+        <div class="noprint">
+            <div class="wrapper col5">
+                <div id="copyright">
+                    &copy; @DateTime.Now.Year - Corinne City Corp
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

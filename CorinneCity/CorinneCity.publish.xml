@@ -1,0 +1,9 @@
+<publishData>
+  <publishProfile
+    publishUrl="https://slimjonzey-001-site1.smarterasp.net:8172/msdeploy.axd"
+    msdeploySite="slimjonzey-001-site1"
+    destinationAppUrl="http://slimjonzey-001-site1.smarterasp.net/"
+    profileName="Default Settings"
+    publishMethod="MSDeploy"
+    userName="ifc\slimjonzey-001" />
+</publishData>

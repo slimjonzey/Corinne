@@ -1,0 +1,38 @@
+﻿@model List<CorinneCity.Controllers.EventBoolConverter>
+
+    @{
+        ViewBag.Title = "Remove Calendar Item";
+    }
+
+    <div class="wrapper col3">
+        <div id="container">
+            <form action="/Account/RemoveCalendarItem" method="post" novalidate="novalidate">
+                <h3>@ViewBag.Title</h3>
+                <span style="margin:10px">Please select the item(s) to remove from the calendar.</span>
+                <table style="max-width:50%">
+                    @{
+                        for (var i = 0; i < Model.Count; i++)
+                        {
+                            <tr>
+                                <td>@Html.CheckBoxFor(x => x[i].Selected)</td>
+                                @Html.HiddenFor(x => x[i].Title)
+                                @Html.HiddenFor(x => x[i].Start)
+                                @Html.HiddenFor(x => x[i].Location)
+                                @Html.HiddenFor(x => x[i].Id)
+                                @Html.HiddenFor(x => x[i].End)
+                                @Html.HiddenFor(x => x[i].Details)
+                                <td>@Model[i].Title</td>
+                                <td>@Model[i].Start</td>
+                            </tr>
+                        }
+                    }
+                </table>
+                <input type="submit" value="Remove Calendar Items" />
+            </form>
+        </div>
+    </div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
+            

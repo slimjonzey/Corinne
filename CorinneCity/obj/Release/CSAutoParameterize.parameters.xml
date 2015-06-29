@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="DefaultConnection-Web.config Connection String" description="DefaultConnection Connection String used in web.config by the application to access the database." defaultValue="Data Source=SQL5007.Smarterasp.net;Initial Catalog=DB_9AE33A_CorinneCity;User Id=DB_9AE33A_CorinneCity_admin;Password=Corinne#1;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\CorinneCity\\CorinneCity\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DefaultConnection']/@connectionString" />
+  </parameter>
+  <parameter name="Entities-Web.config Connection String" description="Entities Connection String used in web.config by the application to access the database." defaultValue="metadata=res://*/Models.GovEntities.csdl|res://*/Models.GovEntities.ssdl|res://*/Models.GovEntities.msl;provider=System.Data.SqlClient;provider connection string=&quot;Data Source=SQL5007.Smarterasp.net;Initial Catalog=DB_9AE33A_CorinneCity;User Id=DB_9AE33A_CorinneCity_admin;Password=Corinne#1;&quot;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\CorinneCity\\CorinneCity\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='Entities']/@connectionString" />
+  </parameter>
+</parameters>

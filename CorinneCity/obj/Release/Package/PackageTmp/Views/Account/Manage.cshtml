@@ -1,0 +1,62 @@
+﻿@model CorinneCity.Models.LocalPasswordModel
+@{
+    ViewBag.Title = "Manage Site Content";
+}
+
+<div class="wrapper col3">
+    <div id="container">
+        <h1>@ViewBag.Title</h1>
+
+        <p class="message-success">@ViewBag.StatusMessage</p>
+
+        <p>You're logged in as <strong>@User.Identity.Name</strong>.</p>
+
+        <table>
+            <tr>
+                <td class="dashboardContainerTop">
+                    <div class="dashboardItem">
+                        @Html.Partial("_UploadCouncilMinutesPartial")
+                    </div>
+                </td>
+                <td class="dashboardContainerTop">
+                    <div class="dashboardItem">
+                        @Html.Partial("_UploadPlanZoneMinutesPartial")
+                    </div>
+                </td>
+                <td class="dashboardContainerTop">
+                    <div class="dashboardItem">
+                        @Html.Partial("_AddCalendarItemPartial")
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="dashboardContainerBottom">
+                    <div class="dashboardItem">
+                        @if (ViewBag.HasLocalPassword)
+                        {
+                            @Html.Partial("_ChangePasswordPartial")
+                        }
+                        else
+                        {
+                            @Html.Partial("_SetPasswordPartial")
+                        }
+                    </div>
+                </td>
+                <td class="dashboardContainerBottom">
+                    <div class="dashboardItem">
+                        @Html.Partial("_RegisterPartial")
+                    </div>
+                </td>
+                <td class="dashboardContainerBottom">
+                    <div class="dashboardItem">
+                        @Html.Partial("_RemoveCalendarItemPartial")
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

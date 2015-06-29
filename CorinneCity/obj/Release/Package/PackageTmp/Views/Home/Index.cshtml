@@ -1,0 +1,73 @@
+﻿<script src="@Url.Content("~/Scripts/jquery.innerfade.js?ver=1.0")" type="text/javascript"></script>
+@model List<CorinneCity.Controllers.FormattedDateTimes>
+@{
+    ViewBag.Title = "Welcome to Corinne City";
+}
+@section featured {
+    <div class="wrapper col1" >
+        <div id="header">
+            <h1>@ViewBag.Title</h1>
+            <h2>@ViewBag.Message</h2>
+        </div>
+    </div>
+}
+<div class="wrapper col2">
+    <div id="intro">
+        <div class="fl_left">
+            <h1>Upcoming Events</h1>
+            <div class="marquee-with-options">
+                @foreach (var item in Model)
+                {
+                    <a style="margin-bottom:10px;" href="@Url.Content("~/Home/Calendar")">
+                        @item.EventTitle <br />
+                        @item.EventDate <br />
+                        <div>@item.EventStart - @item.EventEnd</div>
+                        @item.EventLocation
+                    </a><br />
+                    <br />
+                    <br />
+                }
+            </div>
+        </div>
+        <div class="fl_right">
+            <ul id="rotation">
+                @*<li><a href="/IndActivities/ShowRegForm"><img src="/Images/5klogo.jpg" alt="" /></a></li>*@
+                <li><a href="#"><img src="/Images/corinnelogo.jpg" alt="" /></a></li>
+                <li><a href="#"><img src="/Images/banner.jpg" alt="" /></a></li>
+                <li><a href="#"><img src="/Images/boatramp.jpg" alt="" /></a></li>
+               @* <li><a href="/IndActivities/ShowRegForm"><img src="/Images/5klogo.jpg" alt="" /></a></li>*@
+                <li><a href="#"><img src="/Images/bridge.jpg" alt="" /></a></li>
+                <li><a href="#"><img src="/Images/cityhall.jpg" alt="" /></a></li>
+                <li><a href="#"><img src="/Images/lodge.jpg" alt="" /></a></li>
+                @*<li><a href="/IndActivities/ShowRegForm"><img src="/Images/5klogo.jpg" alt="" /></a></li>*@
+                <li><a href="#"><img src="/Images/mercantile.jpg" alt="" /></a></li>
+                <li><a href="#"><img src="/Images/postoffice.jpg" alt="" /></a></li>
+                <li><a href="#"><img src="/Images/river.jpg" alt="" /></a></li>
+                @*<li><a href="/IndActivities/ShowRegForm"><img src="/Images/5klogo.jpg" alt="" /></a></li>*@
+                <li><a href="#"><img src="/Images/train2.jpg" alt="" /></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<script src="@Url.Content("~/Scripts/jquery.marquee.min.js?ver=1.0")" type="text/javascript"></script>
+<script type="text/javascript">
+    $(function() {
+        var $mwo = $('.marquee-with-options');
+        $('.marquee').marquee();
+        $('.marquee-with-options').marquee({
+            //speed in milliseconds of the marquee
+            speed: 8000,
+            //gap in pixels between the tickers
+            gap: 200,
+            //gap in pixels between the tickers
+            delayBeforeStart: 10,
+            //'left' or 'right'
+            direction: 'up',
+            //true or false - should the marquee be duplicated to show an effect of continues flow
+            duplicated: true,
+            //on hover pause the marquee - using jQuery plugin https://github.com/tobia/Pause
+            pauseOnHover: true
+        });
+    })
+</script>

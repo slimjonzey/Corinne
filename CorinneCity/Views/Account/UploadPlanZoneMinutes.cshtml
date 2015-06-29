@@ -1,0 +1,40 @@
+﻿@{
+    ViewBag.Title = "Upload Planning & Zoning Minutes";
+}
+
+<div class="wrapper col3">
+    <div id="container">
+        <form action="/Account/UploadPlanZoneMinutes" method="post" enctype="multipart/form-data">
+            <h3>@ViewBag.Title</h3>
+            <span>Choose a file to upload</span><br />
+            <input type="file" id="file" name="file" /><br /><br />
+            <span>Select a year for this file</span><br />
+            <select name="year" id="year">
+                @{
+                    for (var d = new DateTime(DateTime.Today.Year - 10, DateTime.Today.Month, 1); d < DateTime.Today.AddYears(10); d = d.AddYears(1))
+                    {
+                        <option value="@d.ToString("s")">@d.ToString("yyyy")</option>
+                    }
+                    for (var d = new DateTime(DateTime.Today.Year, DateTime.Today.Month, 1); d < DateTime.Today.AddYears(10); d = d.AddYears(1))
+                    {
+                        if (d.Year == DateTime.Today.Year)
+                        {
+                            <option value="@d.ToString("s")" selected="selected">@d.ToString("yyyy")</option>
+                        }
+                        else
+                        {
+                            <option value="@d.ToString("s")">@d.ToString("yyyy")</option>
+                        }
+                    }
+                }
+            </select><br /><br />
+            <input type="hidden" name="fileType" value="2" />
+            <input type="submit" name="submitType" value="Upload Planning & Zoning Minutes" />
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
+

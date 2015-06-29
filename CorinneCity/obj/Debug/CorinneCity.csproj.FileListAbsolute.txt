@@ -1,0 +1,98 @@
+c:\users\a547099\documents\visual studio 2012\Projects\CorinneCity\CorinneCity\bin\CorinneCity.dll
+c:\users\a547099\documents\visual studio 2012\Projects\CorinneCity\CorinneCity\bin\CorinneCity.pdb
+c:\users\a547099\documents\visual studio 2012\Projects\CorinneCity\CorinneCity\bin\Antlr3.Runtime.dll
+c:\users\a547099\documents\visual studio 2012\Projects\CorinneCity\CorinneCity\bin\DotNetOpenAuth.AspNet.dll
+c:\users\a547099\documents\visual studio 2012\Projects\CorinneCity\CorinneCity\bin\DotNetOpenAuth.Core.dll
+c:\users\a547099\documents\visual studio 2012\Projects\CorinneCity\CorinneCity\bin\DotNetOpenAuth.OAuth.Consumer.dll
+c:\users\a547099\documents\visual studio 2012\Projects\CorinneCity\CorinneCity\bin\DotNetOpenAuth.OAuth.dll
+c:\users\a547099\documents\visual studio 2012\Projects\CorinneCity\CorinneCity\bin\DotNetOpenAuth.OpenId.dll
+c:\users\a547099\documents\visual studio 2012\Projects\CorinneCity\CorinneCity\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+c:\users\a547099\documents\visual studio 2012\Projects\CorinneCity\CorinneCity\bin\EntityFramework.dll
+c:\users\a547099\documents\visual studio 2012\Projects\CorinneCity\CorinneCity\bin\Microsoft.Web.Infrastructure.dll
+c:\users\a547099\documents\visual studio 2012\Projects\CorinneCity\CorinneCity\bin\Microsoft.Web.WebPages.OAuth.dll
+c:\users\a547099\documents\visual studio 2012\Projects\CorinneCity\CorinneCity\bin\Newtonsoft.Json.dll
+c:\users\a547099\documents\visual studio 2012\Projects\CorinneCity\CorinneCity\bin\System.Net.Http.Formatting.dll
+c:\users\a547099\documents\visual studio 2012\Projects\CorinneCity\CorinneCity\bin\System.Web.Helpers.dll
+c:\users\a547099\documents\visual studio 2012\Projects\CorinneCity\CorinneCity\bin\System.Web.Http.dll
+c:\users\a547099\documents\visual studio 2012\Projects\CorinneCity\CorinneCity\bin\System.Web.Http.WebHost.dll
+c:\users\a547099\documents\visual studio 2012\Projects\CorinneCity\CorinneCity\bin\System.Web.Mvc.dll
+c:\users\a547099\documents\visual studio 2012\Projects\CorinneCity\CorinneCity\bin\System.Web.Optimization.dll
+c:\users\a547099\documents\visual studio 2012\Projects\CorinneCity\CorinneCity\bin\System.Web.Razor.dll
+c:\users\a547099\documents\visual studio 2012\Projects\CorinneCity\CorinneCity\bin\System.Web.WebPages.Deployment.dll
+c:\users\a547099\documents\visual studio 2012\Projects\CorinneCity\CorinneCity\bin\System.Web.WebPages.dll
+c:\users\a547099\documents\visual studio 2012\Projects\CorinneCity\CorinneCity\bin\System.Web.WebPages.Razor.dll
+c:\users\a547099\documents\visual studio 2012\Projects\CorinneCity\CorinneCity\bin\WebGrease.dll
+c:\users\a547099\documents\visual studio 2012\Projects\CorinneCity\CorinneCity\bin\WebMatrix.Data.dll
+c:\users\a547099\documents\visual studio 2012\Projects\CorinneCity\CorinneCity\bin\WebMatrix.WebData.dll
+c:\users\a547099\documents\visual studio 2012\Projects\CorinneCity\CorinneCity\bin\EntityFramework.xml
+c:\users\a547099\documents\visual studio 2012\Projects\CorinneCity\CorinneCity\bin\Newtonsoft.Json.xml
+c:\users\a547099\documents\visual studio 2012\Projects\CorinneCity\CorinneCity\bin\System.Net.Http.Formatting.xml
+c:\users\a547099\documents\visual studio 2012\Projects\CorinneCity\CorinneCity\bin\System.Web.Helpers.xml
+c:\users\a547099\documents\visual studio 2012\Projects\CorinneCity\CorinneCity\bin\System.Web.Http.xml
+c:\users\a547099\documents\visual studio 2012\Projects\CorinneCity\CorinneCity\bin\System.Web.Http.WebHost.xml
+c:\users\a547099\documents\visual studio 2012\Projects\CorinneCity\CorinneCity\bin\System.Web.Mvc.xml
+c:\users\a547099\documents\visual studio 2012\Projects\CorinneCity\CorinneCity\bin\System.Web.Razor.xml
+c:\users\a547099\documents\visual studio 2012\Projects\CorinneCity\CorinneCity\bin\System.Web.WebPages.xml
+c:\users\a547099\documents\visual studio 2012\Projects\CorinneCity\CorinneCity\bin\System.Web.WebPages.Deployment.xml
+c:\users\a547099\documents\visual studio 2012\Projects\CorinneCity\CorinneCity\bin\System.Web.WebPages.Razor.xml
+c:\users\a547099\documents\visual studio 2012\Projects\CorinneCity\CorinneCity\bin\WebMatrix.Data.xml
+c:\users\a547099\documents\visual studio 2012\Projects\CorinneCity\CorinneCity\bin\Microsoft.Web.WebPages.OAuth.xml
+c:\users\a547099\documents\visual studio 2012\Projects\CorinneCity\CorinneCity\bin\WebMatrix.WebData.xml
+c:\users\a547099\documents\visual studio 2012\Projects\CorinneCity\CorinneCity\bin\DotNetOpenAuth.AspNet.xml
+c:\users\a547099\documents\visual studio 2012\Projects\CorinneCity\CorinneCity\bin\DotNetOpenAuth.Core.xml
+c:\users\a547099\documents\visual studio 2012\Projects\CorinneCity\CorinneCity\bin\DotNetOpenAuth.OAuth.Consumer.xml
+c:\users\a547099\documents\visual studio 2012\Projects\CorinneCity\CorinneCity\bin\DotNetOpenAuth.OAuth.xml
+c:\users\a547099\documents\visual studio 2012\Projects\CorinneCity\CorinneCity\bin\DotNetOpenAuth.OpenId.xml
+c:\users\a547099\documents\visual studio 2012\Projects\CorinneCity\CorinneCity\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+c:\users\a547099\documents\visual studio 2012\Projects\CorinneCity\CorinneCity\obj\Debug\CorinneCity.dll
+c:\users\a547099\documents\visual studio 2012\Projects\CorinneCity\CorinneCity\obj\Debug\CorinneCity.pdb
+c:\users\a547099\documents\visual studio 2012\Projects\CorinneCity\CorinneCity\obj\Debug\CorinneCity.csprojResolveAssemblyReference.cache
+C:\CorinneCity\CorinneCity\bin\CorinneCity.dll
+C:\CorinneCity\CorinneCity\bin\CorinneCity.pdb
+C:\CorinneCity\CorinneCity\bin\Antlr3.Runtime.dll
+C:\CorinneCity\CorinneCity\bin\DotNetOpenAuth.AspNet.dll
+C:\CorinneCity\CorinneCity\bin\DotNetOpenAuth.Core.dll
+C:\CorinneCity\CorinneCity\bin\DotNetOpenAuth.OAuth.Consumer.dll
+C:\CorinneCity\CorinneCity\bin\DotNetOpenAuth.OAuth.dll
+C:\CorinneCity\CorinneCity\bin\DotNetOpenAuth.OpenId.dll
+C:\CorinneCity\CorinneCity\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+C:\CorinneCity\CorinneCity\bin\EntityFramework.dll
+C:\CorinneCity\CorinneCity\bin\Microsoft.Web.Infrastructure.dll
+C:\CorinneCity\CorinneCity\bin\Microsoft.Web.WebPages.OAuth.dll
+C:\CorinneCity\CorinneCity\bin\Newtonsoft.Json.dll
+C:\CorinneCity\CorinneCity\bin\System.Web.Helpers.dll
+C:\CorinneCity\CorinneCity\bin\System.Web.Mvc.dll
+C:\CorinneCity\CorinneCity\bin\System.Web.Optimization.dll
+C:\CorinneCity\CorinneCity\bin\System.Web.Razor.dll
+C:\CorinneCity\CorinneCity\bin\System.Web.WebPages.Deployment.dll
+C:\CorinneCity\CorinneCity\bin\System.Web.WebPages.dll
+C:\CorinneCity\CorinneCity\bin\System.Web.WebPages.Razor.dll
+C:\CorinneCity\CorinneCity\bin\WebGrease.dll
+C:\CorinneCity\CorinneCity\bin\WebMatrix.Data.dll
+C:\CorinneCity\CorinneCity\bin\WebMatrix.WebData.dll
+C:\CorinneCity\CorinneCity\bin\EntityFramework.xml
+C:\CorinneCity\CorinneCity\bin\Newtonsoft.Json.xml
+C:\CorinneCity\CorinneCity\bin\System.Web.Helpers.xml
+C:\CorinneCity\CorinneCity\bin\System.Web.Mvc.xml
+C:\CorinneCity\CorinneCity\bin\System.Web.Razor.xml
+C:\CorinneCity\CorinneCity\bin\System.Web.WebPages.xml
+C:\CorinneCity\CorinneCity\bin\System.Web.WebPages.Deployment.xml
+C:\CorinneCity\CorinneCity\bin\System.Web.WebPages.Razor.xml
+C:\CorinneCity\CorinneCity\bin\WebMatrix.Data.xml
+C:\CorinneCity\CorinneCity\bin\Microsoft.Web.WebPages.OAuth.xml
+C:\CorinneCity\CorinneCity\bin\WebMatrix.WebData.xml
+C:\CorinneCity\CorinneCity\bin\DotNetOpenAuth.AspNet.xml
+C:\CorinneCity\CorinneCity\bin\DotNetOpenAuth.Core.xml
+C:\CorinneCity\CorinneCity\bin\DotNetOpenAuth.OAuth.Consumer.xml
+C:\CorinneCity\CorinneCity\bin\DotNetOpenAuth.OAuth.xml
+C:\CorinneCity\CorinneCity\bin\DotNetOpenAuth.OpenId.xml
+C:\CorinneCity\CorinneCity\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+C:\CorinneCity\CorinneCity\obj\Debug\CorinneCity.dll
+C:\CorinneCity\CorinneCity\obj\Debug\CorinneCity.pdb
+C:\CorinneCity\CorinneCity\bin\CorinneCity.dll.config
+C:\CorinneCity\CorinneCity\bin\DocX.dll
+C:\CorinneCity\CorinneCity\bin\Org.Mentalis.Security.Cryptography.dll
+C:\CorinneCity\CorinneCity\bin\Mono.Math.dll
+C:\CorinneCity\CorinneCity\bin\Org.Mentalis.Security.Cryptography.xml
+C:\CorinneCity\CorinneCity\bin\Mono.Math.xml
+C:\CorinneCity\CorinneCity\obj\Debug\CorinneCity.csprojResolveAssemblyReference.cache

@@ -1,0 +1,37 @@
+﻿@model CorinneCity.Models.RegisterModel
+    @{
+        ViewBag.Title = "Create a New Account";
+    }
+
+    <div class="wrapper col3">
+        <div id="container">
+            @using (Html.BeginForm())
+            {
+                <h1>@ViewBag.Title</h1>
+                @Html.AntiForgeryToken();
+                @Html.ValidationSummary()
+                <fieldset>
+                    <legend>Registration Form</legend>
+                    <table style="max-width:50%">
+                        <tr>
+                            <td>@Html.LabelFor(m => m.UserName)</td>
+                            <td>@Html.TextBoxFor(m => m.UserName)</td>
+                        </tr>
+                        <tr>
+                            <td>@Html.LabelFor(m => m.Password)</td>
+                            <td>@Html.PasswordFor(m => m.Password)</td>
+                        </tr>
+                        <tr>
+                            <td>@Html.LabelFor(m => m.ConfirmPassword)</td>
+                            <td>@Html.PasswordFor(m => m.ConfirmPassword)</td>
+                        </tr>
+                    </table>
+                    <input type="submit" value="Register" />
+                </fieldset>
+            }
+        </div>
+    </div>
+
+    @section Scripts {
+        @Scripts.Render("~/bundles/jqueryval")
+    }

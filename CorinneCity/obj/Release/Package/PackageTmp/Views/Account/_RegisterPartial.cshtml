@@ -1,0 +1,21 @@
+﻿@model CorinneCity.Models.LocalPasswordModel
+@{
+    ViewBag.Title = "Register a New User";
+}
+
+@using (Html.BeginForm("Manage", "Account"))
+{
+    @Html.AntiForgeryToken()
+    <h3>@ViewBag.Title</h3>
+    <fieldset class="dashboardItem">
+        <legend>Register New User</legend>
+        @Html.HiddenFor(m => m.register, new { id = "register" })
+        <input type="submit" value="Register New User" />
+    </fieldset>
+}
+
+<script type="text/javascript">
+    $(function (){
+        var x = document.getElementById("register").value = true;
+    })
+</script>
