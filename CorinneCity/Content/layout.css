@@ -350,7 +350,6 @@ div.wrapper h2{
 .sideNav {
     list-style: none;
     float: left;
-    margin: 0;
     border:groove;
     border-radius: 5px;
     background: -webkit-linear-gradient(left, #362C20 , #585C3F); /* For Safari */
@@ -359,6 +358,7 @@ div.wrapper h2{
     background: linear-gradient(to right, #362C20, #585C3F); /* Standard syntax */
     font-size:14px;
 	display: block;
+	margin: 10px;
 }
 
 #treeview {
