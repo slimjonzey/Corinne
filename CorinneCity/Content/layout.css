@@ -350,7 +350,7 @@ div.wrapper h2{
 .sideNav {
     list-style: none;
     float: left;
-    margin: 10px;
+    margin: 0;
     border:groove;
     border-radius: 5px;
     background: -webkit-linear-gradient(left, #362C20 , #585C3F); /* For Safari */
@@ -358,7 +358,7 @@ div.wrapper h2{
     background: -moz-linear-gradient(right, #362C20, #585C3F); /* For Firefox 3.6 to 15 */
     background: linear-gradient(to right, #362C20, #585C3F); /* Standard syntax */
     font-size:14px;
-    width:160px;
+	display: block;
 }
 
 #treeview {
@@ -366,6 +366,8 @@ div.wrapper h2{
     color:#FF9900;
     float:left;
     padding:5px;
+	margin: 10px;
+	display: block;
 }
 
 #treeview:hover {
@@ -403,6 +405,11 @@ div.wrapper h2{
     font-weight:bold;
     color:#362C20;
     border-top: groove 3px;
+}
+
+li {
+	margin: 1em 0;
+	display: block;
 }
 
 /* ----------------------------------------------Content-------------------------------------*/

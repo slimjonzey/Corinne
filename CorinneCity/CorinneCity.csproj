@@ -423,7 +423,6 @@
     <Content Include="Views\Account\_AddCalendarItemPartial.cshtml" />
     <Content Include="Views\Government\CouncilMinutes.cshtml" />
     <Content Include="Views\Government\PlanMinutes.cshtml" />
-    <Content Include="Views\Home\EventDetails.cshtml" />
     <Content Include="Views\Account\_RemoveCalendarItemPartial.cshtml" />
     <Content Include="Views\Account\RemoveCalendarItem.cshtml" />
     <Content Include="Views\Account\_RegisterPartial.cshtml" />
@@ -432,6 +431,7 @@
     <Content Include="Views\Government\MinutesTree.cshtml" />
     <Content Include="Views\IndActivities\Schedule.cshtml" />
     <Content Include="Views\IndActivities\Register.cshtml" />
+    <Content Include="Views\IndActivities\Basketball.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

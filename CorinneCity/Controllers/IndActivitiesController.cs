@@ -27,6 +27,11 @@ namespace CorinneCity.Controllers
             return View();
         }
 
+	    public ActionResult Basketball()
+	    {
+		    return View();
+	    }
+
         public ActionResult ShowRegForm()
         {
             return File("~/Content/5k release waiver.pdf", "application/pdf", "5k release waiver.pdf");

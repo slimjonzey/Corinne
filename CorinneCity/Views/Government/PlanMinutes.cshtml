@@ -16,10 +16,10 @@
                     @foreach (var item in Model)
                     {
                         <ul id="treeview">
-                            <li>
-                                <a>&#9658 @item.Key</a>
-                                @Html.Partial("MinutesTree", item.Value)
-                            </li>
+	                        <li>
+		                        <a>&#9658 @item.Key</a>
+		                        @Html.Partial("MinutesTree", item.Value)
+	                        </li>
                         </ul>
                     }
                 </td>
