@@ -32,9 +32,9 @@ a{outline:none; text-decoration:none;}
 .fl_left{float:left;}
 .fl_right{float:right;}
 
-.imgl, .imgr{border:1px solid #666666; padding:5px;}
-.imgl{float:left; margin:0 8px 8px 0; clear:left;}
-.imgr{float:right; margin:0 0 8px 8px; clear:right;}
+.imgl, .imgr{border:0 solid #666666; padding:0;}
+.imgl{float:left; margin:0; clear:left;}
+.imgr{float:right; margin:0; clear:right;}
 
 /* ----------------------------------------------Wrapper-------------------------------------*/
 
@@ -187,10 +187,10 @@ div.wrapper h2{
 #intro .fl_right{
 	display:block;
 	float:right;
-	width:420px;
+	width:430px;
 	height:320px;
-	padding:9px;
-	border:1px solid #CBCFB5;
+	padding:0;
+	border:0 solid #CBCFB5;
 	overflow:hidden;
 	}
 
@@ -201,12 +201,12 @@ div.wrapper h2{
 }
 
 #intro .fl_right li{
-	margin-bottom:10px;
+	margin-bottom:0;
 	}
 
 #intro .fl_right img{
 	display:block;
-	width:420px;
+	width:430px;
 	height:320px;
 	}
 
