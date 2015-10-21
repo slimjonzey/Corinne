@@ -7,6 +7,8 @@
 <script src="@Url.Content("~/Scripts/jquery-ui-1.8.20.js")" type="text/javascript"></script>
 <script src="@Url.Content("~/Scripts/Minutes.js")" type="text/javascript"></script>
 
+<body onload="appendMinutes('@Model.Values.Last().Last().FileContent')">
+</body>
 <div class="wrapper col3">
     <div id="container">
         <h1>@ViewBag.Title</h1>
@@ -23,9 +25,7 @@
                         </ul>
                     }
                 </td>
-                <td class="showMinutes" id="showMinutes">
-                    Please select the minutes to display.
-                </td>
+	            <td class="showMinutes" id="showMinutes"/>
             </tr>
         </table>
     </div>

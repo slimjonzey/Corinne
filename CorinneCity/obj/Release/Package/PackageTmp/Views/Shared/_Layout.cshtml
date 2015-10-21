@@ -30,16 +30,17 @@
                     <nav>
                         <ul id="topnav">
                             <li class="last">@Html.ActionLink("About", "CityInfo", "Home")
-								<ul>
-									<li><a href="http://www.boxeldercounty.org/corinne-history.htm">City History</a></li>
-									<li><a href="/Images/City Map 2013.pdf">City Map</a></li>
-									<li><a href="/Images/zonemap.pdf">Zoning Map</a></li>
-								</ul>
+	                            <ul>
+		                            <li><a href="http://www.boxeldercounty.org/corinne-history.htm" target="_blank">City History</a></li>
+		                            <li><a href="/Images/City Map 2013.pdf" target="_blank">City Map</a></li>
+		                            <li><a href="/Images/zonemap.pdf" target="_blank">Zoning Map</a></li>
+	                            </ul>
 							</li>
                             <li>
-                                @Html.ActionLink("Activities", "Activities", "Home")
+                                @Html.ActionLink("Activities", "", "Home")
                                 <ul>
-                                    <li>@Html.ActionLink("Register for Corinne 5K", "Register", "IndActivities")</li>
+	                                <li>@Html.ActionLink("4th of July Events Schedule", "Schedule", "IndActivities")</li>
+	                                <li>@Html.ActionLink("3 v 3 Basketball Tournament", "Basketball", "IndActivities")</li>
                                 </ul>
                             </li>
                             <li>
@@ -51,7 +52,7 @@
                                     <li>@Html.ActionLink("Conditional Use Permit Application", "ConditionalUse", "Services")</li>
                                     <li>@Html.ActionLink("City Park Reservation Form", "Reservations", "Services")</li>
                                     <li>@Html.ActionLink("Dog License Renewal", "DogRenew", "Services")</li>
-                                    <li>@Html.ActionLink("Excavation Permit Request", "ExcavationPermit", "Services")</li>
+                                    <li>@Html.ActionLink("Excavation Permit Request", "Excavation", "Services")</li>
                                     <li>@Html.ActionLink("Veterans Hall Checklist", "VetCheck", "Services")</li>
                                 </ul>
                             </li>

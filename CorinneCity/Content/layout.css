@@ -348,7 +348,7 @@ div.wrapper h2{
 
 /* side navigation*/
 .sideNav {
-    list-style: none;
+	list-style: none;
     float: left;
     border:groove;
     border-radius: 5px;
@@ -357,16 +357,16 @@ div.wrapper h2{
     background: -moz-linear-gradient(right, #362C20, #585C3F); /* For Firefox 3.6 to 15 */
     background: linear-gradient(to right, #362C20, #585C3F); /* Standard syntax */
     font-size:14px;
-	display: block;
-	margin: 10px;
+	display:block;
+	margin: 5px;
 }
 
 #treeview {
     list-style:none;
     color:#FF9900;
     float:left;
-    padding:5px;
-	margin: 10px;
+	padding: 10px;
+	margin: 3px;
 	display: block;
 }
 
@@ -383,11 +383,7 @@ div.wrapper h2{
     list-style:none;
 }
 
-.showAlways {
-    display:inline-block;
-}
-
-    /*Admin dashboard*/
+/*Admin dashboard*/
 .dashboardContainerTop {
     vertical-align: top;
 }

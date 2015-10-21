@@ -1,12 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Web;
 using System.Web.Mvc;
-using CorinneCity.Filters;
 using CorinneCity.Models;
 using System.IO;
-using Microsoft.Office.Interop.Word;
 
 namespace CorinneCity.Controllers
 {
@@ -47,7 +44,7 @@ namespace CorinneCity.Controllers
 
             if (duties.Contains("|"))
             {
-                int separator = duties.IndexOf("|");
+                int separator = duties.IndexOf("|", StringComparison.Ordinal);
                 councilDuties.Add(duties.Substring(0, separator));
                 remainder = duties.Substring(separator + 1, duties.Length - (separator + 1));
             }
@@ -99,7 +96,6 @@ namespace CorinneCity.Controllers
                         {
                             newYear.Add(content);
                         }
-                        //councilMinutes.Add(content);
                     }
                 }
                 return View(sortedMinutes);
@@ -136,7 +132,6 @@ namespace CorinneCity.Controllers
                         {
                             newYear.Add(content);
                         }
-                        //planMinutes.Add(content);
                     }
                 }
                 return View(sortedMinutes);

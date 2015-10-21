@@ -32,9 +32,9 @@ a{outline:none; text-decoration:none;}
 .fl_left{float:left;}
 .fl_right{float:right;}
 
-.imgl, .imgr{border:1px solid #666666; padding:5px;}
-.imgl{float:left; margin:0 8px 8px 0; clear:left;}
-.imgr{float:right; margin:0 0 8px 8px; clear:right;}
+.imgl, .imgr{border:0 solid #666666; padding:0;}
+.imgl{float:left; margin:0; clear:left;}
+.imgr{float:right; margin:0; clear:right;}
 
 /* ----------------------------------------------Wrapper-------------------------------------*/
 
@@ -187,10 +187,10 @@ div.wrapper h2{
 #intro .fl_right{
 	display:block;
 	float:right;
-	width:420px;
+	width:430px;
 	height:320px;
-	padding:9px;
-	border:1px solid #CBCFB5;
+	padding:0;
+	border:0 solid #CBCFB5;
 	overflow:hidden;
 	}
 
@@ -201,12 +201,12 @@ div.wrapper h2{
 }
 
 #intro .fl_right li{
-	margin-bottom:10px;
+	margin-bottom:0;
 	}
 
 #intro .fl_right img{
 	display:block;
-	width:420px;
+	width:430px;
 	height:320px;
 	}
 
@@ -348,9 +348,8 @@ div.wrapper h2{
 
 /* side navigation*/
 .sideNav {
-    list-style: none;
+	list-style: none;
     float: left;
-    margin: 10px;
     border:groove;
     border-radius: 5px;
     background: -webkit-linear-gradient(left, #362C20 , #585C3F); /* For Safari */
@@ -358,14 +357,17 @@ div.wrapper h2{
     background: -moz-linear-gradient(right, #362C20, #585C3F); /* For Firefox 3.6 to 15 */
     background: linear-gradient(to right, #362C20, #585C3F); /* Standard syntax */
     font-size:14px;
-    width:160px;
+	display:block;
+	margin: 5px;
 }
 
 #treeview {
     list-style:none;
     color:#FF9900;
     float:left;
-    padding:5px;
+	padding: 10px;
+	margin: 3px;
+	display: block;
 }
 
 #treeview:hover {
@@ -381,11 +383,7 @@ div.wrapper h2{
     list-style:none;
 }
 
-.showAlways {
-    display:inline-block;
-}
-
-    /*Admin dashboard*/
+/*Admin dashboard*/
 .dashboardContainerTop {
     vertical-align: top;
 }
@@ -403,6 +401,11 @@ div.wrapper h2{
     font-weight:bold;
     color:#362C20;
     border-top: groove 3px;
+}
+
+li {
+	margin: 1em 0;
+	display: block;
 }
 
 /* ----------------------------------------------Content-------------------------------------*/
