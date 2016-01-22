@@ -315,7 +315,6 @@
     <Content Include="Images\train.jpg" />
     <Content Include="Images\train2.jpg" />
     <Content Include="Scripts\Council.js" />
-    <Content Include="Scripts\daypilot-all.min.js" />
     <Content Include="Calendar\fullcalendar.css" />
     <Content Include="Calendar\fullcalendar.js" />
     <Content Include="Calendar\fullcalendar.min.js" />
@@ -357,7 +356,6 @@
     <Content Include="Scripts\jquery-ui-1.9.2.js" />
     <Content Include="Scripts\jquery-ui-1.9.2.min.js" />
     <Content Include="Scripts\jquery-ui.custom.min.js" />
-    <Content Include="Scripts\jquery.balloon.js" />
     <Content Include="Scripts\jquery.innerfade.js" />
     <Content Include="Scripts\jquery.marquee.js" />
     <Content Include="Scripts\jquery.marquee.min.js" />

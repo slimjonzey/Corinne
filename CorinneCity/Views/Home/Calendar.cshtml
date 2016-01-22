@@ -7,33 +7,6 @@
             <div>
                 <h3>Note: Hover over a calendar item for additional details.</h3>
             </div>
-            @*<select id="dropdown">
-                    @{
-                        for (var d = new DateTime(DateTime.Today.Year, DateTime.Today.Month, 1); d < DateTime.Today.AddMonths(15); d = d.AddMonths(1))
-                        {
-                            <option value="@d.ToString("s")">@d.ToString("MMMM yyyy")</option>
-                        }
-                    }
-                </select>*@
-            @*@Html.DayPilotBubble("bubble", new DayPilotBubbleConfig
-                {
-                     Position = DayPilot.Web.Mvc.Enums.Bubble.BubblePosition.EventTop,
-                     Animated = true,
-                     UseBorder = true,
-                     UseShadow = true,
-                     BackgroundColor = "#362C20"
-                })
-                 @Html.
-                 @Html.DayPilotMonth("dp", new DayPilotMonthConfig
-                 {
-                     BackendUrl = Url.Content("/Home/BackendMonth"),
-                     WeekStarts = DayPilot.Web.Mvc.Enums.WeekStarts.Sunday,
-                     CssClassPrefix = "month_white",
-                     CssOnly = true,
-                     EventHeight = 25,
-                     ShowToolTip = false,
-                     EventBubble = "bubble"
-                 })*@
             <div id='calendar'></div>
         </div>
     </div>
@@ -52,10 +25,6 @@
         }
     </style>
     <script type="text/javascript">
-        //$("#dropdown").change(function () {
-        //    var selected = $(this).val();
-        //    dp.commandCallBack("navigate", { start: selected });
-        //});
         $(document).ready(function () {
             $('#calendar').fullCalendar({
                 header: {

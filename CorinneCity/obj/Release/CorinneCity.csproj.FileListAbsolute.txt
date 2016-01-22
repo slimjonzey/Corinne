@@ -47,3 +47,9 @@ C:\CorinneCity\CorinneCity\bin\Org.Mentalis.Security.Cryptography.dll
 C:\CorinneCity\CorinneCity\bin\Mono.Math.dll
 C:\CorinneCity\CorinneCity\bin\Org.Mentalis.Security.Cryptography.xml
 C:\CorinneCity\CorinneCity\bin\Mono.Math.xml
+C:\CorinneCity\CorinneCity\bin\System.Net.Http.Formatting.dll
+C:\CorinneCity\CorinneCity\bin\System.Web.Http.dll
+C:\CorinneCity\CorinneCity\bin\System.Web.Http.WebHost.dll
+C:\CorinneCity\CorinneCity\bin\System.Net.Http.Formatting.xml
+C:\CorinneCity\CorinneCity\bin\System.Web.Http.xml
+C:\CorinneCity\CorinneCity\bin\System.Web.Http.WebHost.xml
