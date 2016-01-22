@@ -14,6 +14,8 @@ using DayPilot.Web.Mvc.Enums;
 using DayPilot.Web.Mvc.Events.Month;
 using DayPilot.Web.Mvc.Events.Scheduler;
 using System.Data.SqlClient;
+using System.Globalization;
+using Newtonsoft.Json.Converters;
 
 namespace CorinneCity.Controllers
 {
@@ -45,7 +47,21 @@ namespace CorinneCity.Controllers
 
         public ActionResult Calendar()
         {
-            return View();
+			var db = new Entities();
+	        var calendarEvents = db.CalendarEvents.ToList();
+			var convertedEvents = calendarEvents.Select(calEvent => new CalendarEventObject()
+			{
+				end = calEvent.End,
+				id = calEvent.Id,
+				start = calEvent.Start,
+				title = calEvent.Title,
+				location = calEvent.Location,
+				details = calEvent.Details,
+				starttime = DateTime.Parse(calEvent.Start, CultureInfo.CurrentCulture).ToString("h:mm tt", CultureInfo.CurrentCulture),
+				endtime = DateTime.Parse(calEvent.End, CultureInfo.CurrentCulture).ToString("h:mm tt", CultureInfo.CurrentCulture)
+			}).ToList();
+			object jsonCalendarEvents = new HtmlString(convertedEvents.ToJSON());
+	        return View(jsonCalendarEvents);
         }
 
         public ActionResult BackendMonth()
@@ -63,6 +79,27 @@ namespace CorinneCity.Controllers
             return View();
         }
     }
+
+	public static class JSONHelper
+	{
+		public static string ToJson(this object obj)
+		{
+			var serializer = new JavaScriptSerializer();
+			return serializer.Serialize(obj);
+		}
+	}
+
+	public class CalendarEventObject
+	{
+		public int id { get; set; }
+		public string title { get; set; }
+		public string start { get; set; }
+		public string end { get; set; }
+		public string location { get; set; }
+		public string details { get; set; }
+		public string starttime { get; set; }
+		public string endtime { get; set; }
+	}
 
     public class FormattedDateTimes
     {
