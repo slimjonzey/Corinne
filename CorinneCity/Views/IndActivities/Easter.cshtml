@@ -1,0 +1,15 @@
+﻿@model CorinneCity.Controllers.EasterDateObject
+@{
+    ViewBag.Title = "Easter Egg Hunt";
+}
+
+<div class="wrapper col3">
+    <div id="container">
+        <h1>@ViewBag.Title</h1>
+        <h2>@Model.Date</h2>
+        <p style="margin:10px">Hop on over to the city park at @Model.Time for the annual Corinne City Easter Egg Hunt!</p>
+        <p style="margin: 10px">The hunt will be divided into three age groups and there will be plenty of candy and prizes for all.</p>
+        <p style="margin: 10px">Be sure to be on time because it gets crazy quick once the horn sounds!</p>
+    </div>
+    <img src="~/Images/animated-easter-bunny.gif" alt="Easter Bunny" style="margin-left: 30px">
+</div>

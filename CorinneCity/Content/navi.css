@@ -9,6 +9,7 @@ Licence: <a href="http://www.os-templates.com/template-terms">Website Template L
 @media print {
     .noprint {
         display: none;
+        background-color:#CBCFB5;
     }
 }
 
@@ -37,7 +38,7 @@ Licence: <a href="http://www.os-templates.com/template-terms">Website Template L
 #topnav ul, #topnav li {
     float: right;
     list-style: none;
-    margin: 0;
+    margin:0;
     padding: 0;
 }
 

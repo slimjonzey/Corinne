@@ -30,18 +30,19 @@
                     </section>
                     <nav>
                         <ul id="topnav">
-                            <li class="last">@Html.ActionLink("About", "CityInfo", "Home")
-	                            <ul>
-		                            <li><a href="http://www.boxeldercounty.org/corinne-history.htm" target="_blank">City History</a></li>
-		                            <li><a href="/Images/City Map 2013.pdf" target="_blank">City Map</a></li>
-		                            <li><a href="/Images/zonemap.pdf" target="_blank">Zoning Map</a></li>
-	                            </ul>
-							</li>
+                            <li class="last" style="margin-right: 100px">@Html.ActionLink("About", "CityInfo", "Home")
+                                <ul>
+                                    <li><a href="http://www.boxeldercounty.org/corinne-history.htm" target="_blank">City History</a></li>
+                                    <li><a href="/Images/City Map 2013.pdf" target="_blank">City Map</a></li>
+                                    <li><a href="/Images/zonemap.pdf" target="_blank">Zoning Map</a></li>
+                                </ul>
+                            </li>
                             <li>
                                 @Html.ActionLink("Activities", "", "Home")
                                 <ul>
-	                                <li>@Html.ActionLink("4th of July Events Schedule", "Schedule", "IndActivities")</li>
-	                                <li>@Html.ActionLink("3 v 3 Basketball Tournament", "Basketball", "IndActivities")</li>
+                                    <li>@Html.ActionLink("City Easter Egg Hunt", "Easter", "IndActivities")</li>
+                                    <li>@Html.ActionLink("4th of July Events Schedule", "Schedule", "IndActivities")</li>
+                                    <li>@Html.ActionLink("3 v 3 Basketball Tournament", "Basketball", "IndActivities")</li>
                                 </ul>
                             </li>
                             <li>
@@ -88,7 +89,7 @@
                 </div>
             </div>
         </header>
-        <a class="noprint" style="float:right;" href="https://www.facebook.com/pages/Corinne-City/199385813507016"><img src="~/Images/facebook.png" /></a>
+        <a class="noprint" style="float:right; margin-right: 10px" href="https://www.facebook.com/pages/Corinne-City/199385813507016"><img src="~/Images/facebook.png" /></a>
         <div class="wrapper col1">
             @RenderSection("featured", required: false)
             <section>
