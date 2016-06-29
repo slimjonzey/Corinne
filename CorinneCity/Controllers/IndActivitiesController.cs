@@ -30,7 +30,20 @@ namespace CorinneCity.Controllers
 
 	    public ActionResult Basketball()
 	    {
-		    return View();
+				var dateTime = new ThreeVThreeObject();
+				var db = new Entities();
+				var calendarEvents = db.CalendarEvents.ToList();
+				var basketballEvent = calendarEvents.LastOrDefault(b => b.Title.ToLowerInvariant().Contains("3 v 3".ToLowerInvariant()));
+				if (basketballEvent != null)
+				{
+					DateTime tempDateTime;
+					if (DateTime.TryParse(basketballEvent.Start, out tempDateTime))
+					{
+						dateTime.Date = tempDateTime.ToLongDateString();
+						dateTime.Time = tempDateTime.ToShortTimeString();
+					}
+				}
+		    return View(dateTime);
 	    }
 
         public ActionResult ShowRegForm()
@@ -58,6 +71,12 @@ namespace CorinneCity.Controllers
     }
 
 	public class EasterDateObject
+	{
+		public string Date { get; set; }
+		public string Time { get; set; }
+	}
+
+	public class ThreeVThreeObject
 	{
 		public string Date { get; set; }
 		public string Time { get; set; }
