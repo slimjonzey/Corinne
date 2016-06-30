@@ -89,7 +89,6 @@
                 </div>
             </div>
         </header>
-        <a class="noprint" style="float:right; margin-right: 10px" href="https://www.facebook.com/pages/Corinne-City/199385813507016"><img src="~/Images/facebook.png" /></a>
         <div class="wrapper col1">
             @RenderSection("featured", required: false)
             <section>
@@ -98,9 +97,21 @@
         </div>
         <div class="noprint">
             <div class="wrapper col5">
-                <div id="copyright">
-                    &copy; @DateTime.Now.Year - Corinne City Corp
-                </div>
+							<table>
+								<tr>
+									<td>
+										Connect With Us
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="https://www.facebook.com/pages/Corinne-City/199385813507016"><img src="~/Images/facebook.png" /></a>
+									</td>
+								</tr>
+							</table>
+              <div id="copyright">
+                  &copy; @DateTime.Now.Year - Corinne City Corp
+              </div>
             </div>
         </div>
     </body>

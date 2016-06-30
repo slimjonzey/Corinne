@@ -301,6 +301,7 @@
     <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
     <Content Include="Content\themes\base\minified\jquery.ui.tooltip.min.css" />
     <Content Include="Images\5klogo.jpg" />
+    <Content Include="Images\aarongordon.gif" />
     <Content Include="Images\animated-easter-bunny.gif" />
     <Content Include="Images\bell.jpg" />
     <Content Include="Images\boatramp.jpg" />
