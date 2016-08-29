@@ -344,6 +344,7 @@ div.wrapper h2{
     margin: 10px;
     padding: 10px;
     font-size:14px;
+    width:90%;
 }
 
 /* side navigation*/
@@ -672,7 +673,6 @@ li {
 /* ----------------------------------------------Copyright-------------------------------------*/
 
 #copyright{
-    margin-left:30px;
     margin-top:10px;
     vertical-align:top;
 	}
