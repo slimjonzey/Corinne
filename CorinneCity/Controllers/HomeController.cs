@@ -33,7 +33,14 @@ namespace CorinneCity.Controllers
                 if (future > 0)
                 {
                     FormattedDateTimes formattedTimes = new FormattedDateTimes(item);
-                    returnEvents.Add(formattedTimes);
+										if (returnEvents.Count <= 5)
+										{
+											returnEvents.Add(formattedTimes);
+										}
+										else
+										{
+											break;
+										}
                 }
             }
             returnEvents = returnEvents.OrderBy(x => x.EventDate).ToList();
