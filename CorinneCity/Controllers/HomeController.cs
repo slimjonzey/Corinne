@@ -52,6 +52,11 @@ namespace CorinneCity.Controllers
             return View();
         }
 
+				public ActionResult CityRates()
+				{
+					return View();
+				}
+
         public ActionResult Calendar()
         {
 			var db = new Entities();

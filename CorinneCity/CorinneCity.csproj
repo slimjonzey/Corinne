@@ -445,6 +445,7 @@
     <Content Include="Views\IndActivities\Register.cshtml" />
     <Content Include="Views\IndActivities\Basketball.cshtml" />
     <Content Include="Views\IndActivities\Easter.cshtml" />
+    <Content Include="Views\Home\CityRates.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
