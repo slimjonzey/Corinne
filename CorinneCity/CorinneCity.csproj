@@ -309,6 +309,7 @@
     <Content Include="Images\cityhall.jpg" />
     <Content Include="Images\corinnelogo.jpg" />
     <Content Include="Images\facebook.png" />
+    <Content Include="Images\fire.gif" />
     <Content Include="Images\lodge.jpg" />
     <Content Include="Images\logo.ico" />
     <Content Include="Images\mercantile.jpg" />
@@ -344,6 +345,7 @@
     <Content Include="Content\5k release waiver.pdf" />
     <Content Include="Images\City Map 2013.pdf" />
     <Content Include="Images\zonemap.pdf" />
+    <Content Include="Images\FireRestrict.pdf" />
     <None Include="Properties\PublishProfiles\CorinneCity.pubxml" />
     <None Include="Scripts\jquery-1.7.1.intellisense.js" />
     <Content Include="Images\banner.jpg" />

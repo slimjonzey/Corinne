@@ -19,7 +19,12 @@ body{
 	background-color:#585C3F;
 	}
 
-img{display:block; margin:0; padding:0; border:0;}
+.announcement {
+  text-align: center;
+  position: center;
+}
+
+img{margin:0; padding:0; border:0;}
 .justify{text-align:justify;}
 .bold{font-weight:bold;}
 .center{text-align:center;}
@@ -247,7 +252,6 @@ div.wrapper h2{
 	}
 
 #latest ul, #latest p{
-	margin:0;
 	padding:0;
 	list-style:none;
 	display:inline;
