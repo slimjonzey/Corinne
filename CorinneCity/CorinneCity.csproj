@@ -313,6 +313,7 @@
     <Content Include="Images\lodge.jpg" />
     <Content Include="Images\logo.ico" />
     <Content Include="Images\mercantile.jpg" />
+    <Content Include="Images\mikelee.jpg" />
     <Content Include="Images\postoffice.jpg" />
     <Content Include="Images\river.jpg" />
     <Content Include="Images\train.jpg" />
@@ -346,6 +347,7 @@
     <Content Include="Images\City Map 2013.pdf" />
     <Content Include="Images\zonemap.pdf" />
     <Content Include="Images\FireRestrict.pdf" />
+    <Content Include="Images\mikelee.pdf" />
     <None Include="Properties\PublishProfiles\CorinneCity.pubxml" />
     <None Include="Scripts\jquery-1.7.1.intellisense.js" />
     <Content Include="Images\banner.jpg" />
