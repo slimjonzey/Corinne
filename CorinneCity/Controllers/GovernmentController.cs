@@ -94,7 +94,8 @@ namespace CorinneCity.Controllers
                         }
                         else
                         {
-                            newYear.Add(content);
+                          var oldYear = sortedMinutes.Where(m => m.Key == content.Year).FirstOrDefault().Value;
+                          oldYear.Add(content);
                         }
                     }
                 }
@@ -130,7 +131,8 @@ namespace CorinneCity.Controllers
                         }
                         else
                         {
-                            newYear.Add(content);
+                          var oldYear = sortedMinutes.Where(m => m.Key == content.Year).FirstOrDefault().Value;
+                          oldYear.Add(content);
                         }
                     }
                 }
@@ -141,7 +143,7 @@ namespace CorinneCity.Controllers
         public ActionResult PlanZone()
         {
             var db = new Entities();
-            return View(db.GovOfficials.ToList());
+            return View(db.GovOfficials.OrderByDescending(t => t.Title == "Chairman").ThenByDescending(t => t.Title == "Vice Chairman").ToList());
         }
 
         public ActionResult Fire()

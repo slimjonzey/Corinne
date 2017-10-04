@@ -385,6 +385,7 @@ div.wrapper h2{
 
 #item {
     list-style:none;
+    display:none;
 }
 
 /*Admin dashboard*/
